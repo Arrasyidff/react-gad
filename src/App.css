@@ -1,0 +1,432 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  position: relative;
+}
+
+.active {
+  color: #23c7c6;
+}
+
+.navbar {
+  background-color: white;
+  /* background-color: red; */
+  /* height: 70px; */
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  width: 100%;
+}
+
+.logo-nav {
+  margin-left: 20px;
+  padding: 10px;
+}
+
+.logo-nav img {
+  width: 150px;
+}
+
+.user-nav {
+  margin-right: 40px;
+  width: 230px;
+  /* background-color: yellow; */
+}
+
+.user-nav p span {
+  color: #23c7c6;
+}
+
+.user-photo-nav {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #23c7c6;
+}
+
+@media only screen and (max-width: 700px) {
+  .navbar {
+    position: relative;
+    width: 100%;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo-nav a {
+    margin-left: 20px;
+  }
+
+  .logo-nav a img {
+    width: 150px;
+  }
+
+  .user-nav {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .user-nav p {
+    display: none;
+  }
+
+  .user-photo-nav {
+    width: 45px;
+    height: 45px;
+  }
+}
+
+/* ---------content--------- */
+
+.content {
+  position: relative;
+  margin-top: 90px;
+}
+
+.btn-bar {
+  display: none;
+}
+
+.sidebar {
+  width: 20%;
+  height: 90vh;
+  /* background-color: yellow; */
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar a {
+  padding-left: 15px;
+  /* background-color: blue; */
+  line-height: 50px;
+  width: 100%;
+  /* border: 1px solid black; */
+}
+
+.sidebar a .fas {
+  width: 30px;
+}
+
+.fill-content {
+  width: 80%;
+  margin-left: 20%;
+  background-color: rgba(143, 131, 131, 0.1);
+  /* height: 100vh; */
+  padding: 20px;
+}
+
+/* ---------personnels--------- */
+.header-personnels {
+  padding: 10px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+.title-personnels h1 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #23c7c6;
+}
+
+.actions-personnels {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 400px;
+}
+
+.actions-personnels div {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  width: 200px;
+  height: 50px;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.search-person i {
+  margin-left: 10px;
+  color: #23c7c6;
+  cursor: pointer;
+}
+
+.search-person input {
+  width: 70%;
+  margin-left: 10px;
+}
+
+.search-person input:focus {
+  outline: none;
+}
+
+.add-personnel {
+  justify-content: center;
+  font-weight: bold;
+  background-color: #23c7c6;
+  color: white;
+  border: 1px solid #23c7c6 !important;
+}
+
+.personnels {
+  margin-top: 20px;
+}
+
+.card {
+  background-color: white;
+  overflow: hidden;
+  font-size: 15px;
+}
+
+.head-card {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px;
+  border-bottom: 1px solid rgb(228, 228, 228);
+}
+
+.fa-ellipsis-h {
+  cursor: pointer;
+}
+
+.head-card p span {
+  color: #23c7c6;
+  width: 100px;
+}
+
+.head-card .fas {
+  color: rgb(99, 95, 95);
+}
+
+.photo-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+
+.photo-card div {
+  overflow: hidden;
+  width: 130px;
+  height: 130px;
+  border-radius: 500%;
+  /* background-color: blue; */
+}
+
+.photo-card div img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-desc {
+  padding: 0 10px 5px 10px;
+}
+
+.card-desc h4 {
+  font-weight: bold;
+}
+
+.card-desc p {
+  margin-bottom: 5px;
+}
+
+.pagination-button {
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.actions-btn {
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btn-previous,
+.btn-next {
+  cursor: pointer;
+}
+
+.btn-previous .fas {
+  margin-right: 5px;
+}
+
+.btn-next .fas {
+  margin-left: 5px;
+}
+
+.loadingSpinner {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.data-not-found {
+  height: 79vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+.data-not-found img {
+  margin-top: -150px;
+}
+
+.data-not-found p {
+  margin-top: -50px;
+  font-size: 30px;
+}
+
+.data-not-found button {
+  margin-top: 30px;
+  background-color: #23c7c6;
+  color: white;
+  padding: 10px;
+  border-radius: 3px;
+  transition: 0.3s;
+  font-size: 15px;
+}
+
+.data-not-found button:hover {
+  background-color: #06dddd;
+}
+
+.filterData {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.filterData .card {
+  margin-top: 20px;
+}
+
+.filterData button {
+  margin-top: 10px;
+  background-color: #23c7c6;
+  color: white;
+  padding: 10px;
+  border-radius: 3px;
+  transition: 0.3s;
+  font-size: 15px;
+}
+
+.filterData button:hover {
+  background-color: #06dddd;
+}
+
+@media only screen and (max-width: 700px) {
+  .content {
+    margin-top: -2px;
+    width: 100%;
+  }
+
+  .btn-bar {
+    display: inline;
+    background-color: none;
+    position: absolute;
+    top: -43px;
+    z-index: 100;
+    margin-left: 13px;
+    font-size: 25px;
+  }
+
+  .sidebar {
+    width: 375px;
+    background-color: white;
+    transition: .5s ease-in-out;
+  }
+
+  .bar-close {
+    margin-left: -100%;
+  }
+
+  .bar-open {
+    margin-left: 0;
+  }
+
+  .fill-content {
+    width: 100%;
+    margin-left: 0;
+    min-height: 92vh;
+    /* background-color: greenyellow; */
+  }
+
+  .header-personnels {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .actions-personnels {
+    flex-direction: column;
+    width: 100%;
+    margin-left: -5px;
+  }
+
+  .actions-personnels div {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .search-person input {
+    width: 260px;
+    height: 30px;
+  }
+
+  .personnels {
+    display: flex;
+    flex-direction: column;
+    /* background-color: greenyellow; */
+  }
+
+  .personnels .card {
+    margin-bottom: 15px;
+  }
+
+  .card-middle {
+    display: flex;
+    align-items: center;
+  }
+
+  .photo-card, .card-desc {
+    /* width: 20%; */
+    margin-left: 10px;
+  }
+
+  .dob-card-title,
+  .dob-card-desc,
+  .email-card-title,
+  .email-card-desc {
+    display: none;
+  }
+
+  .filterData button {
+    margin-top: 20px;
+    width: 50%;
+  }
+
+  .filterData .card {
+    width: 100%;
+  } 
+}
